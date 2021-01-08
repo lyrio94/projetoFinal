@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">projetoFinal</string>
+    <string name="tvEmail">E-mail</string>
+    <string name="tvPassword">Senha</string>
+    <string name="btLogin">Login</string>
+    <string name="tvRegister">Não tem cadastro? Cadastre-se AQUI!</string>
+    <string name="tvForgotPassword">Esqueceu a Senha? Clique AQUI!</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+</resources>
