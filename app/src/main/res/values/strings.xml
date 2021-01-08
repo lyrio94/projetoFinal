@@ -6,5 +6,13 @@
     <string name="tvRegister">Não tem cadastro? Cadastre-se AQUI!</string>
     <string name="tvForgotPassword">Esqueceu a Senha? Clique AQUI!</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="magic_card">Magic Card</string>
+    <string name="image_from_the_register">image from the register</string>
+    <string name="repeat_password">Repetir a senha</string>
+    <string name="register">Register</string>
+    <string name="back">Back</string>
+    <string name="recover_Password">Recover Password</string>
+    <string name="digite_seu_e_mail_cadastrado">Digite seu E-mail Cadastrado</string>
+    <string name="btChamarAPI">Chamar API</string>
 
 </resources>

@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@android:color/holo_blue_dark"
     tools:context=".view.activity.LoginActivity">
 
     <TextView
@@ -14,6 +14,8 @@
         android:layout_height="39dp"
         android:layout_marginBottom="16dp"
         android:text="@string/tvForgotPassword"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/holo_red_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/tvRegister"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,11 +26,14 @@
         android:id="@+id/tvPassword"
         android:layout_width="294dp"
         android:layout_height="35dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:hint="@string/tvEmail"
         android:text="@string/tvPassword"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/holo_red_dark"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
@@ -36,13 +41,15 @@
         android:id="@+id/tvEmail"
         android:layout_width="294dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         android:hint="@string/tvEmail"
         android:text="@string/btLogin"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/holo_red_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -70,10 +77,22 @@
         android:layout_height="39dp"
         android:layout_marginBottom="44dp"
         android:text="@string/tvRegister"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/holo_red_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="287dp"
+        android:layout_height="307dp"
+        android:contentDescription="@string/magic_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/magic_card" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
