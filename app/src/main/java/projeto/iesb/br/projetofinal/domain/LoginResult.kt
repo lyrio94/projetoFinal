@@ -1,4 +1,6 @@
 package projeto.iesb.br.projetofinal.domain
 
-class LoginResult {
-}
+data class LoginResult(
+    var result:String? = null ,
+    var error:String? = null
+)

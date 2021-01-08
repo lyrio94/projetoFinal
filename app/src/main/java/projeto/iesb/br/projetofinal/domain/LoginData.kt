@@ -1,4 +1,6 @@
 package projeto.iesb.br.projetofinal.domain
 
-class LoginData {
-}
+data class LoginData(
+    var email:String,
+    var pass:String
+)

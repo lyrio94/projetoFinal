@@ -1,4 +1,7 @@
 package projeto.iesb.br.projetofinal.domain
 
-class RegisterData {
-}
+data class RegisterData(
+    var email:String,
+    var pass:String,
+    var confirmPass:String
+)

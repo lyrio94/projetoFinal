@@ -13,6 +13,14 @@
     <string name="back">Back</string>
     <string name="recover_Password">Recover Password</string>
     <string name="digite_seu_e_mail_cadastrado">Digite seu E-mail Cadastrado</string>
+
     <string name="btChamarAPI">Chamar API</string>
+
+    <string name="email_required">E-mail obrigatório!</string>
+    <string name="password_required">Senha obrigatória!</string>
+    <string name="password_confirm">Confirmacao de senha e senha diferentes!</string>
+    <string name="password_6_char">Senha maior que 6 cacacteres!</string>
+    <string name="register_error">Email invalido ou usuário já cadastrado!</string>
+    <string name="login_error">Erro no login, Verifique os dados!</string>
 
 </resources>

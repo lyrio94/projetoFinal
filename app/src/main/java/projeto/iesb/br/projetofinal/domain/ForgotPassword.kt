@@ -1,4 +1,5 @@
 package projeto.iesb.br.projetofinal.domain
 
-class ForgotPassword {
-}
+ data class ForgotPassword(
+    var email:String,
+)
