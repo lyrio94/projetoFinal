@@ -8,7 +8,7 @@ import projeto.iesb.br.projetofinal.repository.ForgotPasswordRepository
 class ForgotPasswordInteractor {
     var repo = ForgotPasswordRepository()
 
-    suspend fun resgatarSenha(data: ForgotPassword): LoginResult {
-        return repo.resgatarSenha(data)
+    suspend fun resgatarSenha(data: ForgotPassword) {
+         repo.resgatarSenha(data)
     }
 }
