@@ -23,5 +23,6 @@
     <string name="register_error">Email invalido ou usuário já cadastrado!</string>
     <string name="login_error">Erro no login, Verifique os dados!</string>
     <string name="card">carta de magic</string>
+    <string name="imagem_da_carta">imagem da carta</string>
 
 </resources>
