@@ -9,5 +9,6 @@ class ApiInteractor {
 
     suspend fun chamarAPI(): List<MagicCard>{
         return repo.chamarAPI()
+
     }
 }

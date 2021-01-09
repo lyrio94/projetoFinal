@@ -8,7 +8,6 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface MtgCardApi {
-    //https://api.magicthegathering.io/v1/cards?pageSize=2?page=15
     @GET("cards")
     suspend fun getAllCards(@Query("pageSize") pageSize: Int, @Query("page") page: Int)
             : ResultadoDTO
@@ -35,7 +34,6 @@ interface MtgCardApi {
         private val conector: Retrofit
 
         init {
-
             conector = Retrofit.Builder()
                 .baseUrl("https://api.magicthegathering.io/v1/cards/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -45,6 +43,7 @@ interface MtgCardApi {
 
         suspend fun chamarAPI(): List<MagicCard> {
             val service = conector.create(MtgCardApi::class.java)
+            //https://api.magicthegathering.io/v1/cards?pageSize=2?page=15
             val listadeCartas = service.getAllCards(2, 15).results
 
             return listadeCartas.map { dto ->
