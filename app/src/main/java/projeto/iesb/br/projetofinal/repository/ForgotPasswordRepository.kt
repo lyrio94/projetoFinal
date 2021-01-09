@@ -16,9 +16,9 @@ class ForgotPasswordRepository {
             operacao.addOnCompleteListener { resultado ->
                 val resForgotPassword = LoginResult()
                 if (resultado.isSuccessful) {
-                    resForgotPassword.result = "CERTO: Senha enviada para usuario cadastrado"
+                    resForgotPassword.result = "Senha enviada para usuario cadastrado!"
                 } else {
-                    resForgotPassword.error = "Erro: Usuário inexistentes"
+                    resForgotPassword.error = "Erro: Usuário inexistente"
                 }
                 resultadoPromisse.resume(resForgotPassword)
             }

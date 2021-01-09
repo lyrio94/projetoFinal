@@ -35,15 +35,12 @@ class RegisterActivity : AppCompatActivity() {
         }
 
 
-        val intentRegister = Intent(this, RegisterActivity::class.java)
-        startActivity(intentRegister)
-        finish()
     }
 
     fun cadastrar() {
-        val email = tvEmailRegister.text.toString()
-        val pass = tvPasswordRegister.text.toString()
-        val confirmPass = tvPasswordConfirmRegister.text.toString()
+        val email = etEmailRegistry.text.toString()
+        val pass = etPasswordRegistry.text.toString()
+        val confirmPass = etPasswordConfirmRegistry.text.toString()
 
         val dataRegister = RegisterData(email, pass, confirmPass)
         viewmodel.cadastrar(dataRegister)
@@ -51,6 +48,7 @@ class RegisterActivity : AppCompatActivity() {
         viewmodel = RegisterViewModel(application)
         viewmodel.resultadoParaTela.observe(this) { resultado ->
             processarResultCadastrar(resultado)
+
         }
 
     }
@@ -61,12 +59,11 @@ class RegisterActivity : AppCompatActivity() {
             Toast.makeText(this, res.error, Toast.LENGTH_LONG).show()
             return
         }
-
         Toast.makeText(this, res.result, Toast.LENGTH_LONG).show()
-        val intentHome = Intent(this, HomeActivity::class.java)
-        startActivity(intentHome)
-        Toast.makeText(this, res.result, Toast.LENGTH_LONG).show()
+        val intentRegister = Intent(this, HomeActivity::class.java)
+        startActivity(intentRegister)
         finish()
+
     }
 
     fun voltar() {

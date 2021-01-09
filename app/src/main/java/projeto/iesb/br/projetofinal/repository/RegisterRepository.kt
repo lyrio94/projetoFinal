@@ -16,8 +16,6 @@ class RegisterRepository {
                     val resRegister = RegisterResult()
                     if (resultado.isSuccessful) {
                         resRegister.result = "USUARIO_CRIADO"
-                    } else {
-                        resRegister.error = "ERRO_AO_CRIAR_USUARIO"
                     }
 
                     resultadoPromisse.resume(resRegister)

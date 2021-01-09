@@ -9,11 +9,9 @@ import projeto.iesb.br.projetofinal.R
 import projeto.iesb.br.projetofinal.domain.LoginData
 import projeto.iesb.br.projetofinal.domain.LoginResult
 import projeto.iesb.br.projetofinal.viewmodel.LoginViewModel
-import projeto.iesb.br.projetofinal.viewmodel.RegisterViewModel
 
 class LoginActivity : AppCompatActivity() {
     lateinit var viewmodel: LoginViewModel
-    lateinit var viewmodelRegister: RegisterViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, res.error, Toast.LENGTH_LONG).show()
             return
         }
-
+        Toast.makeText(this, res.result, Toast.LENGTH_LONG).show()
         val intentHome = Intent(this, HomeActivity::class.java)
         startActivity(intentHome)
         finish()
@@ -43,11 +41,13 @@ class LoginActivity : AppCompatActivity() {
 
     fun login() {
 
-        val email = tvEmail.text.toString()
-        val pass = tvPassword.text.toString()
+        val email = etEmail.text.toString()
+        val pass = etPassword.text.toString()
 
         val data = LoginData(email, pass)
         viewmodel.login(data)
+
+
     }
 
     private fun forgotPassword() {

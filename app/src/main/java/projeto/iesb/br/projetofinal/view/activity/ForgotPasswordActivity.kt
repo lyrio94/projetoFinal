@@ -32,17 +32,18 @@ class ForgotPasswordActivity : AppCompatActivity() {
             Toast.makeText(this, res.error, Toast.LENGTH_LONG).show()
             return
         }
-
+        Toast.makeText(this, res.result, Toast.LENGTH_LONG).show()
         val intentLogin = Intent(this, LoginActivity::class.java)
         startActivity(intentLogin)
         finish()
     }
 
-    private fun resgatarSenha(){
-        val email = tv_emailEsqueciSenha.text.toString();
+   fun resgatarSenha(){
+        val email = etEmailAddress.text.toString();
 
         val data = ForgotPassword(email)
         viewmodel.resgatarSenha(data)
+
 
     }
 }
