@@ -79,8 +79,8 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="408dp"
-        android:layout_height="182dp"
+        android:layout_width="413dp"
+        android:layout_height="203dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
