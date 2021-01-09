@@ -1,4 +1,3 @@
 package projeto.iesb.br.projetofinal.repository.dto
 
-class MtgCardLegalityDTO {
-}
+data class MtgCardLegalityDTO (val format: String, val legality: String)

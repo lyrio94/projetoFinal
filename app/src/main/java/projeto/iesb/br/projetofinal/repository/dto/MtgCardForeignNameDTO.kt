@@ -1,4 +1,7 @@
 package projeto.iesb.br.projetofinal.repository.dto
 
-class MtgCardForeignNameDTO {
-}
+data class MtgCardForeignNameDTO( val name: String,
+val imageUrl: String?,
+val language: String,
+val multiverseid: Int?
+)

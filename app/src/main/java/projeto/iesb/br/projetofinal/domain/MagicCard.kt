@@ -1,4 +1,9 @@
 package projeto.iesb.br.projetofinal.domain
 
-class MagicCard {
-}
+data class MagicCard (
+    val nome: String,
+    val custodeMana: String,
+    val texto: String?,
+    val poder: String?,
+    val imagem: String?
+    )

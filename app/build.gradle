@@ -71,5 +71,8 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    /** MTG api dependencie */
+    implementation 'io.magicthegathering:kotlinsdk:1.0.4'
 }
 apply plugin: 'com.google.gms.google-services'

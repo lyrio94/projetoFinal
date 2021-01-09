@@ -1,4 +1,5 @@
 package projeto.iesb.br.projetofinal.repository.dto
 
-class ResultadoDTO {
-}
+data class ResultadoDTO(
+    val results: List<MtgCardDTO>
+)
