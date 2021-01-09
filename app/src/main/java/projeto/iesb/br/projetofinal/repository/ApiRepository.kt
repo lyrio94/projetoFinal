@@ -44,6 +44,7 @@ interface MtgCardApi {
         suspend fun chamarAPI(): List<MagicCard> {
             val service = conector.create(MtgCardApi::class.java)
             //https://api.magicthegathering.io/v1/cards?pageSize=2?page=15
+            //erro acontece aqui
             val listadeCartas = service.getAllCards(2, 15).results
 
             return listadeCartas.map { dto ->
