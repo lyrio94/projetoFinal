@@ -3,13 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="varFragment"
+            type="projeto.iesb.br.projetofinal.view.fragment.ListaCartasFragment"/>
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_blue_dark"
-        tools:context=".view.fragment.ListaCartasFragment">
+        tools:context="view.fragment.ListaPersonagemFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCartas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/btChamarAPI"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/carta_de_magic" />
 
         <Button
             android:id="@+id/btChamarAPI"
@@ -18,11 +36,11 @@
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="32dp"
+            android:onClick="@{ () -> varFragment.chamarAPI() }"
             android:text="@string/btChamarAPI"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

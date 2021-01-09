@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation_file">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_file"
+    app:startDestination="@id/listaCartasFragment">
 
+    <fragment
+        android:id="@+id/listaCartasFragment"
+        android:name="projeto.iesb.br.projetofinal.view.fragment.ListaCartasFragment"
+        android:label="fragment_lista_cartas"
+        tools:layout="@layout/fragment_lista_cartas" />
 </navigation>

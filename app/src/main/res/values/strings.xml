@@ -22,5 +22,6 @@
     <string name="password_6_char">Senha menor que 6 cacacteres!</string>
     <string name="register_error">Email invalido ou usuário já cadastrado!</string>
     <string name="login_error">Erro no login, Verifique os dados!</string>
+    <string name="card">carta de magic</string>
 
 </resources>
