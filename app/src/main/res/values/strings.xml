@@ -24,5 +24,6 @@
     <string name="login_error">Erro no login, Verifique os dados!</string>
     <string name="card">carta de magic</string>
     <string name="imagem_da_carta">imagem da carta</string>
+    <string name="digite_a_senha_novamente">Digite a senha novamente</string>
 
 </resources>
